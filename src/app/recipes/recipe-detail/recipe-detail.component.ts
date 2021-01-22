@@ -1,3 +1,4 @@
+import { RecipeService } from './../recipe.service';
 import { ShoppingListService } from './../../shopping-list/shopping-list.service';
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
@@ -12,7 +13,7 @@ import { Ingredient } from 'src/app/shared/ingredient.model';
 export class RecipeDetailComponent implements OnInit {
   @Input() recipe: Recipe;
 
-  constructor(private slService: ShoppingListService) { }
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
   }
@@ -21,10 +22,8 @@ export class RecipeDetailComponent implements OnInit {
     const ingredients = this.recipe.ingredients;
     console.log('--------')
     console.log(ingredients);
-    for (let ingredient of ingredients){
-      console.log(ingredient);
-      this.slService.addIngredient(ingredient)
-    }
+    this.recipeService.AddIngredientstoShoppingList(ingredients);
+
   }
 
 }
