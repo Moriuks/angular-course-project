@@ -12,7 +12,7 @@ import { Ingredient } from 'src/app/shared/ingredient.model';
 })
 export class RecipeDetailComponent implements OnInit {
   @Input() recipe: Recipe;
-
+  // another comment to test a bracnh
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
