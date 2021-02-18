@@ -1,6 +1,7 @@
 import { Ingredient } from './../shared/ingredient.model';
 import { ShoppingListService } from './shopping-list.service';
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from '../recipes/recipe.model';
 
 @Component({
   selector: 'app-shopping-list',
@@ -25,8 +26,5 @@ export class ShoppingListComponent implements OnInit {
         }
       )
   }
-
-  // onIngredientAdded(ingredient: Ingredient) {
   //   this.ingredients.push(ingredient);
-  // }
 }

@@ -10,6 +10,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   // @Output() recipeWasSelected = new EventEmitter<Recipe>();
+  // comment that will generate conflict
   // This is just a comment to test a branch
   // another random comment
   recipes: Recipe[];
@@ -26,4 +27,6 @@ export class RecipeListComponent implements OnInit {
   //  this.recipeWasSelected.emit(recipe);
   // }
 
+
+  //some other random comment
 }
