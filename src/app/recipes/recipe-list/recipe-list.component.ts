@@ -11,6 +11,7 @@ import { Recipe } from '../recipe.model';
 export class RecipeListComponent implements OnInit {
   // @Output() recipeWasSelected = new EventEmitter<Recipe>();
   // This is just a comment to test a branch
+  // another random comment
   recipes: Recipe[];
 
   constructor(private recipeService: RecipeService) {
